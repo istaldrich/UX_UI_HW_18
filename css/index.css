@@ -47,11 +47,21 @@ li {
     grid-area: 2 / 1 / span 1 / span 3;
 }
 
-@media only screen and (max-width: 600){
+@media only screen and  (max-width: 600){
     .flexContainer {
         flex-direction: column;
     }
     .flexContainer div {
         width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        ;
     }
 }
