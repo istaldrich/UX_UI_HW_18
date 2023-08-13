@@ -38,24 +38,26 @@ li {
 }
 .workGrid {
     display: grid;
-    grid-template-areas: 'item1 item2 item3';
+    grid-template-areas: 'item1 item2 item3'
+    "item4";
 }
 .workGrid div {
     text-align: center;
+    padding: 3%;
 }
 .item4 {
     grid-area: 2 / 1 / span 1 / span 3;
 }
 
-@media only screen and  (max-width: 1000px){
+@media only screen and  (max-width: 700px){
     .flexContainer {
         flex-direction: column;
     }
     .flexContainer div {
-        width: 100%;
+        width: 300px;
     }
     .workGrid {
-        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
         "item1"
@@ -63,5 +65,8 @@ li {
         "item3"
         "item4"
         ;
+    }
+    .item4 {
+        grid-area: 4 / 1 / span 1 / span 1;
     }
 }
