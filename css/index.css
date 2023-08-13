@@ -47,7 +47,7 @@ li {
     grid-area: 2 / 1 / span 1 / span 3;
 }
 
-@media only screen and  (max-width: 600){
+@media only screen and  (max-width: 1000px){
     .flexContainer {
         flex-direction: column;
     }
@@ -55,7 +55,7 @@ li {
         width: 100%;
     }
     .workGrid {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
         grid-template-columns: 1fr;
         grid-template-areas:
         "item1"
